@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"&amp;gt;Z>
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.15.2/moment.min.js"></script>
+    <title>Martiin.fun | main</title>
+    <link rel="icon" href="1f973.png">
+    <LINK REL=StyleSheet HREF="estilos.css">
+    <meta content="martiin.fun | main" property="og:title" />
+    <meta content="my birthday countdown =)" property="og:description" />
+    <meta content="https://multiradiov1.000webhostapp.com/1f973.png" property="og:url" />
+    <meta content="https://multiradiov1.000webhostapp.com/1f973.png" property="og:image" />
+    <meta content="#FFFF00" data-react-helmet="true" name="theme-color" />
+</head>
+<body>
+    <style> 
+        body { 
+            background-image: url("fondo.gif"); 
+            background-position: center 25%; 
+            background-size: cover; 
+        } 
+    </style> 
+    <div class="Main">
+        <header>
+    <h1>Martiinsito birthday:</h1>
+    </header>
+    <div id="resultado">
+            
+
+
+    </div>
+</body>
+<script type="text/javascript"> 
+    var final = moment("2022-08-24"); //2017-06-15
+    setInterval(function() {
+        var inicio = moment();
+        var duracion = final.diff(inicio);
+        var intervalo = moment(duracion);
+        var mes = intervalo.month()+1;
+        var diaDelMes = intervalo.date();
+        var hora = intervalo.hour();
+        var minuto = intervalo.minute();
+        var segundo = intervalo.second();
+        var resultado = (intervalo.format("MM/DD HH:mm:ss"));
+        $("#resultado").html( diaDelMes + " Dias " + hora + " Horas " + minuto + " Minutos " + segundo + " Segundos");
+        $("#minuto").html(minuto);
+        $("#segundo").html(segundo);
+    }, 1);
+    
+</script>
+</html>
