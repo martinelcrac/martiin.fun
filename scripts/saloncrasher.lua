@@ -8,7 +8,18 @@ game.Players.LocalPlayer.Character.HumanoidRootPart.Anchored = true
 local descendants = game:GetService("Workspace")["Tomar pastel"]:GetDescendants()
 
 --gui
-loadstring(game:HttpGet("https://raw.githubusercontent.com/martinelcrac/fe-random/main/crashgui.lua"))();
+
+if not getgenv().Config.Crashgui then
+
+--no gui
+
+end
+
+if getgenv().Config.Crashgui then
+
+ loadstring(game:HttpGet("https://raw.githubusercontent.com/martinelcrac/fe-random/main/crashgui.lua"))();
+
+end
 
 while true do
     for _, tool in ipairs(game:GetService("Players").LocalPlayer.Backpack:GetChildren()) do
@@ -35,8 +46,14 @@ end
        var += 1
     end
     end
-    if var == 700 then break end
+    if var == getgenv().Config.Tools_max then break end
 end
+
+if not getgenv().Config.Ezcrash then
+--drop normal
+end
+
+if  getgenv().Config.Ezcrash then
 game.Players.LocalPlayer.Character.HumanoidRootPart.Anchored = false
 wait(1)
 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-169.52651977539062, 36.003570556640625, 15.457282066345215)
@@ -44,3 +61,4 @@ wait(.3)
 game:GetService("Players").LocalPlayer.Character:FindFirstChild("RightHand"):Destroy() 
 wait(.5)
 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-217.14930725097656, 5.150440692901611, -48.373226165771484)
+end
