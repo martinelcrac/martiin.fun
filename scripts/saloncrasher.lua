@@ -59,6 +59,17 @@ wait(1)
 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-169.52651977539062, 36.003570556640625, 15.457282066345215)
 wait(.3)
 game:GetService("Players").LocalPlayer.Character:FindFirstChild("RightHand"):Destroy() 
-wait(.5)
+wait(1)
 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-217.14930725097656, 5.150440692901611, -48.373226165771484)
+end
+
+if getgenv().Config.Notoolanimation then
+wait(1)
+ for _, v in next, game.Players.LocalPlayer.Character.Humanoid:GetPlayingAnimationTracks() do
+v:Stop()
+end
+
+end
+if not getgenv().Config.Notoolanimation then
+ --/no pasara nada
 end
