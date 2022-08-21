@@ -25,7 +25,7 @@ while true do
     for _, tool in ipairs(game:GetService("Players").LocalPlayer.Backpack:GetChildren()) do
     if tool:IsA("Tool") then
          tool.Parent = game:GetService("Players").LocalPlayer.Character
-         task.wait() --/ si no lo pongo se bugea y tira error de que la Handle no se a encontrado
+         task.wait(.3) --/ si no lo pongo se bugea y tira error de que la Handle no se a encontrado
          tool.Handle.CanCollide = true
     end
 end
