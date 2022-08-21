@@ -55,7 +55,7 @@ end
 
 if  getgenv().Config.Ezcrash then
 game.Players.LocalPlayer.Character.HumanoidRootPart.Anchored = false
-wait(1)
+wait(.1)
 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-169.52651977539062, 36.003570556640625, 15.457282066345215)
 wait(.3)
 game:GetService("Players").LocalPlayer.Character:FindFirstChild("RightHand"):Destroy() 
