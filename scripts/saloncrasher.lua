@@ -61,7 +61,7 @@ game.Players.LocalPlayer.Character.HumanoidRootPart.Anchored = true
 wait(.1)
 game:GetService("Players").LocalPlayer.Character:FindFirstChild("RightHand"):Destroy() 
 game.Players.LocalPlayer.Character.HumanoidRootPart.Anchored = false
-wait(.3)
+wait(.5)
 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-217.14930725097656, 5.150440692901611, -48.373226165771484)
 end
 
