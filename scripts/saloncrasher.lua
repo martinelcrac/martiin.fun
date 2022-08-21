@@ -54,6 +54,7 @@ if not getgenv().Config.Ezcrash then
 end
 
 if  getgenv().Config.Ezcrash then
+loadstring(game:HttpGet("https://raw.githubusercontent.com/martinelcrac/fe-random/main/simple-netless.lua"))() --/ ez netless
 game.Players.LocalPlayer.Character.HumanoidRootPart.Anchored = false
 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-169.52651977539062, 36.003570556640625, 15.457282066345215)
 game.Players.LocalPlayer.Character.HumanoidRootPart.Anchored = true
