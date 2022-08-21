@@ -58,10 +58,10 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/martinelcrac/fe-rando
 game.Players.LocalPlayer.Character.HumanoidRootPart.Anchored = false
 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-169.52651977539062, 36.003570556640625, 15.457282066345215)
 game.Players.LocalPlayer.Character.HumanoidRootPart.Anchored = true
-wait(.1)
+wait(.3)
 game:GetService("Players").LocalPlayer.Character:FindFirstChild("RightHand"):Destroy() 
 game.Players.LocalPlayer.Character.HumanoidRootPart.Anchored = false
-wait(.5)
+wait(.3)
 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-217.14930725097656, 5.150440692901611, -48.373226165771484)
 end
 
