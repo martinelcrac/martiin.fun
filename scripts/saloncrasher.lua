@@ -48,7 +48,7 @@ end
     end
     if var == getgenv().Config.Tools_max then break end
 end
-
+--sexo
 if not getgenv().Config.Ezcrash then
 --drop normal
 end
