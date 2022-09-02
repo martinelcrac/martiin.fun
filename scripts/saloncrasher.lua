@@ -7,6 +7,10 @@ game.Players.LocalPlayer.Character.HumanoidRootPart.Anchored = true
 
 local descendants = game:GetService("Workspace")["Tomar pastel"]:GetDescendants()
 
+	wait(1)
+	local fenv = getfenv()
+	local shp = fenv.sethiddenproperty or fenv.set_hidden_property or fenv.set_hidden_prop or fenv.sethiddenprop
+	shp(game.Players.LocalPlayer, "SimulationRadius", 0)
 --gui
 
 if not getgenv().Config.Crashgui then
@@ -54,14 +58,19 @@ if not getgenv().Config.Ezcrash then
 end
 
 if  getgenv().Config.Ezcrash then
-game.Players.LocalPlayer.Character.HumanoidRootPart.Anchored = false
-game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-169.52651977539062, 36.003570556640625, 15.457282066345215)
-game.Players.LocalPlayer.Character.HumanoidRootPart.Anchored = true
-wait(.3)
-game:GetService("Players").LocalPlayer.Character:FindFirstChild("RightHand"):Destroy() 
-game.Players.LocalPlayer.Character.HumanoidRootPart.Anchored = false
-wait(.3)
-game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-217.14930725097656, 5.150440692901611, -48.373226165771484)
+		wait(1)
+	local fenv = getfenv()
+	local shp = fenv.sethiddenproperty or fenv.set_hidden_property or fenv.set_hidden_prop or fenv.sethiddenprop
+	shp(game.Players.LocalPlayer, "SimulationRadius", 0)
+	game.Players.LocalPlayer.Character.HumanoidRootPart.Anchored = false
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(- 169.52651977539062, 36.003570556640625, 15.457282066345215)
+	game.Players.LocalPlayer.Character.HumanoidRootPart.Anchored = true
+	wait(0.8)
+	game:GetService("Players").LocalPlayer.Character:FindFirstChild("RightHand"):Destroy()
+	game.Players.LocalPlayer.Character.HumanoidRootPart.Anchored = false
+	wait(.7)
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-214, 3, -54.703819274902344)
+		game.Players.LocalPlayer.Character.HumanoidRootPart.Anchored = true
 end
 
 if getgenv().Config.Notoolanimation then
